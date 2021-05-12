@@ -3,6 +3,7 @@
   "description": "Open the IE",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.ComputerVision.LocalServer": "[21.2.1-preview]",
     "UiPath.Excel.Activities": "[2.10.4]",
     "UiPath.Mail.Activities": "[1.10.4]",
     "UiPath.System.Activities": "[21.4.0]",
