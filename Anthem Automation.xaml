@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Anthem_Automation" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1115,701" sap2010:WorkflowViewState.IdRef="Anthem_Automation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Anthem_Automation" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="919,827" sap2010:WorkflowViewState.IdRef="Anthem_Automation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
       <x:String>System.Activities</x:String>
@@ -89,11 +89,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,154.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,52</av:Size>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
           <av:PointCollection x:Key="ConnectorLocation">300,206.5 300,276</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please, enter the excell path" Title="link">
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please, enter the excell path" Title="link">
         <ui:InputDialog.Result>
           <OutArgument x:TypeArguments="x:String">[link]</OutArgument>
         </ui:InputDialog.Result>
@@ -109,10 +109,10 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">200,276</av:Point>
-              <av:Size x:Key="ShapeSize">200,68</av:Size>
+              <av:Size x:Key="ShapeSize">200,66</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Anthem CE Testing" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_772">
+          <Sequence DisplayName="Anthem CE Testing" sap:VirtualizedContainerService.HintSize="6584,16773" sap2010:WorkflowViewState.IdRef="Sequence_772">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="multy_lob" />
               <Variable x:TypeArguments="sd:DataTable" Name="batch_id" />
@@ -128,7 +128,7 @@
                 <OutArgument x:TypeArguments="x:String">[multy_lob]</OutArgument>
               </ui:ReadCell.Result>
             </ui:ReadCell>
-            <If Condition="[multy_lob.StartsWith(&quot;y&quot;) Or multy_lob.StartsWith(&quot;Y&quot;)]" sap:VirtualizedContainerService.HintSize="6542,16556" sap2010:WorkflowViewState.IdRef="If_268">
+            <If Condition="[multy_lob.StartsWith(&quot;y&quot;) Or multy_lob.StartsWith(&quot;Y&quot;) Or multy_lob.StartsWith(&quot;Yes&quot;)]" sap:VirtualizedContainerService.HintSize="6542,16554" sap2010:WorkflowViewState.IdRef="If_268">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -136,7 +136,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="4635,15441" sap2010:WorkflowViewState.IdRef="Sequence_674">
+                <Sequence sap:VirtualizedContainerService.HintSize="4635,15439" sap2010:WorkflowViewState.IdRef="Sequence_674">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="multy_batch" />
                   </Sequence.Variables>
@@ -156,7 +156,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InputDialog>
-                  <If Condition="[multy_batch.StartsWith(&quot;y&quot;) Or multy_batch.StartsWith(&quot;Y&quot;)]" sap:VirtualizedContainerService.HintSize="4593,15287" sap2010:WorkflowViewState.IdRef="If_237">
+                  <If Condition="[multy_batch.StartsWith(&quot;y&quot;) Or multy_batch.StartsWith(&quot;Y&quot;)]" sap:VirtualizedContainerService.HintSize="4593,15285" sap2010:WorkflowViewState.IdRef="If_237">
                     <If.Then>
                       <Sequence DisplayName="Multy_LOB_multy_batch" sap:VirtualizedContainerService.HintSize="3147,15127" sap2010:WorkflowViewState.IdRef="Sequence_654">
                         <sap:WorkflowViewStateService.ViewState>
