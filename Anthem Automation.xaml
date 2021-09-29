@@ -5047,7 +5047,7 @@
                         </ui:ReadCell>
                         <If Condition="[chan.Equals(&quot;email&quot;)]" sap:VirtualizedContainerService.HintSize="3279,10874" sap2010:WorkflowViewState.IdRef="If_777">
                           <If.Then>
-                            <Sequence DisplayName="Email Runner" sap:VirtualizedContainerService.HintSize="1617,4920" sap2010:WorkflowViewState.IdRef="Sequence_1902">
+                            <Sequence DisplayName="Email Runner" sap:VirtualizedContainerService.HintSize="1617,5430" sap2010:WorkflowViewState.IdRef="Sequence_1902">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -6901,7 +6901,7 @@
                                   </ui:GetValue.Value>
                                 </ui:GetValue>
                               </Sequence>
-                              <Sequence DisplayName="IG" sap:VirtualizedContainerService.HintSize="1575,4270" sap2010:WorkflowViewState.IdRef="Sequence_1901">
+                              <Sequence DisplayName="IG" sap:VirtualizedContainerService.HintSize="1575,4780" sap2010:WorkflowViewState.IdRef="Sequence_1901">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="cus" />
                                   <Variable x:TypeArguments="x:String" Name="id_environment" />
@@ -7272,7 +7272,7 @@
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c092e43c-65de-4b2e-8ae4-78e973f49460" InformativeScreenshot="65156df270d25d2c4ee33a6b95dc2391" Selector="&lt;wnd app='inspectorgadget.exe' ctrlname='MainWindow' /&gt;&lt;wnd ctrlname='splitContainer1' /&gt;&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='TopSplitContainer' /&gt;&lt;wnd ctrlname='FeatureTabControl' /&gt;&lt;wnd ctrlname='ImportStatusTabPage' /&gt;&lt;wnd ctrlname='GetImportStatusButton' /&gt;" TimeoutMS="12000" WaitForReady="COMPLETE" />
                                   </ui:Click.Target>
                                 </ui:Click>
-                                <Sequence DisplayName="IG Approve" sap:VirtualizedContainerService.HintSize="1533,2573" sap2010:WorkflowViewState.IdRef="Sequence_2012">
+                                <Sequence DisplayName="IG Approve" sap:VirtualizedContainerService.HintSize="1533,3083" sap2010:WorkflowViewState.IdRef="Sequence_2012">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="pending" />
                                     <Variable x:TypeArguments="x:Int32" Default="1" Name="i" />
@@ -7283,7 +7283,7 @@
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="1491,2481" sap2010:WorkflowViewState.IdRef="Sequence_2028">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="1491,2991" sap2010:WorkflowViewState.IdRef="Sequence_2028">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="pending" />
                                       <Variable x:TypeArguments="x:Int32" Default="1" Name="i" />
@@ -7294,9 +7294,9 @@
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:InterruptibleWhile Condition="[i&lt;100]" DisplayName="While" sap:VirtualizedContainerService.HintSize="1449,2389" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_101">
+                                    <ui:InterruptibleWhile Condition="[i&lt;100]" DisplayName="While" sap:VirtualizedContainerService.HintSize="1449,2899" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_101">
                                       <ui:InterruptibleWhile.Body>
-                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1413,2222" sap2010:WorkflowViewState.IdRef="Sequence_2027">
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1413,2732" sap2010:WorkflowViewState.IdRef="Sequence_2027">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -7317,20 +7317,20 @@
                                               <OutArgument x:TypeArguments="x:String">[pending]</OutArgument>
                                             </ui:GetValue.Value>
                                           </ui:GetValue>
-                                          <If Condition="[pending.Equals(&quot;APPROVED&quot;) Or pending.Equals(&quot;COMPLETED&quot;)]" sap:VirtualizedContainerService.HintSize="1371,1984" sap2010:WorkflowViewState.IdRef="If_805">
+                                          <If Condition="[pending.Equals(&quot;APPROVED&quot;) Or pending.Equals(&quot;COMPLETED&quot;)]" sap:VirtualizedContainerService.HintSize="1371,2494" sap2010:WorkflowViewState.IdRef="If_805">
                                             <If.Then>
                                               <ui:Break sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Break_126" />
                                             </If.Then>
                                             <If.Else>
-                                              <Sequence sap:VirtualizedContainerService.HintSize="1126,1825" sap2010:WorkflowViewState.IdRef="Sequence_2026">
+                                              <Sequence sap:VirtualizedContainerService.HintSize="1126,2335" sap2010:WorkflowViewState.IdRef="Sequence_2026">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <If Condition="[pending.Equals(&quot;PENDING&quot;)]" sap:VirtualizedContainerService.HintSize="1084,1733" sap2010:WorkflowViewState.IdRef="If_804">
+                                                <If Condition="[pending.Equals(&quot;PENDING&quot;)]" sap:VirtualizedContainerService.HintSize="1084,2243" sap2010:WorkflowViewState.IdRef="If_804">
                                                   <If.Then>
-                                                    <Sequence sap:VirtualizedContainerService.HintSize="663,1574" sap2010:WorkflowViewState.IdRef="Sequence_2024">
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="663,2084" sap2010:WorkflowViewState.IdRef="Sequence_2024">
                                                       <Sequence.Variables>
                                                         <Variable x:TypeArguments="x:Boolean" Name="window" />
                                                         <Variable x:TypeArguments="x:Boolean" Name="after_approve" />
@@ -7385,29 +7385,62 @@
                                                           </ui:Target>
                                                         </ui:Click.Target>
                                                       </ui:Click>
-                                                      <ui:UiElementExists DisplayName="Element Exists 'inspectorgadget.exe App...'" Exists="[after_approve]" sap:VirtualizedContainerService.HintSize="621,106" sap2010:WorkflowViewState.IdRef="UiElementExists_49">
-                                                        <ui:UiElementExists.Target>
-                                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d0abddee-43c1-42d7-8604-98d9f22394bc" InformativeScreenshot="59b9cb97b448488ee04a36bc61981351" Selector="&lt;wnd app='inspectorgadget.exe' cls='#32768' idx='*' /&gt;&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl automationid='769' /&gt;" TimeoutMS="200" WaitForReady="COMPLETE" />
-                                                        </ui:UiElementExists.Target>
-                                                      </ui:UiElementExists>
-                                                      <ui:UiElementExists DisplayName="Element Exists 'inspectorgadget.exe App...'" Exists="[after_write_click]" sap:VirtualizedContainerService.HintSize="621,106" sap2010:WorkflowViewState.IdRef="UiElementExists_50">
-                                                        <ui:UiElementExists.Target>
-                                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d0abddee-43c1-42d7-8604-98d9f22394bc" InformativeScreenshot="59b9cb97b448488ee04a36bc61981351" Selector="&lt;wnd aaname='DropDown' app='inspectorgadget.exe' cls='WindowsForms10.Window.*' aastate='invisible, focusable' /&gt;" TimeoutMS="200" WaitForReady="COMPLETE" />
-                                                        </ui:UiElementExists.Target>
-                                                      </ui:UiElementExists>
-                                                      <If Condition="[after_approve.ToString.Equals(&quot;True&quot;) Or after_write_click.ToString.Equals(&quot;True&quot;)]" sap:VirtualizedContainerService.HintSize="621,293" sap2010:WorkflowViewState.IdRef="If_802">
-                                                        <If.Then>
-                                                          <Sequence sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_2022">
+                                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="621,276" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                                        <ui:CommentOut.Body>
+                                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_2029">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <ui:Break sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Break_127" />
+                                                            <ui:UiElementExists DisplayName="Element Exists 'inspectorgadget.exe App...'" Exists="[after_approve]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_49">
+                                                              <ui:UiElementExists.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d0abddee-43c1-42d7-8604-98d9f22394bc" InformativeScreenshot="59b9cb97b448488ee04a36bc61981351" Selector="&lt;wnd app='inspectorgadget.exe' cls='#32768' idx='*' /&gt;&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl automationid='769' /&gt;" TimeoutMS="200" WaitForReady="COMPLETE" />
+                                                              </ui:UiElementExists.Target>
+                                                            </ui:UiElementExists>
                                                           </Sequence>
-                                                        </If.Then>
-                                                      </If>
-                                                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu item  Approve Batch'" sap:VirtualizedContainerService.HintSize="621,106" sap2010:WorkflowViewState.IdRef="Click_3295" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                        </ui:CommentOut.Body>
+                                                      </ui:CommentOut>
+                                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="621,276" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                                        <ui:CommentOut.Body>
+                                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_2030">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <ui:UiElementExists DisplayName="Element Exists 'inspectorgadget.exe App...'" Exists="[after_write_click]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_50">
+                                                              <ui:UiElementExists.Target>
+                                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d0abddee-43c1-42d7-8604-98d9f22394bc" InformativeScreenshot="59b9cb97b448488ee04a36bc61981351" Selector="&lt;wnd aaname='DropDown' app='inspectorgadget.exe' cls='WindowsForms10.Window.*' aastate='invisible, focusable' /&gt;" TimeoutMS="200" WaitForReady="COMPLETE" />
+                                                              </ui:UiElementExists.Target>
+                                                            </ui:UiElementExists>
+                                                          </Sequence>
+                                                        </ui:CommentOut.Body>
+                                                      </ui:CommentOut>
+                                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="621,463" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                                                        <ui:CommentOut.Body>
+                                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="526,385" sap2010:WorkflowViewState.IdRef="Sequence_2031">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <If Condition="[after_approve.ToString.Equals(&quot;True&quot;) Or after_write_click.ToString.Equals(&quot;True&quot;)]" sap:VirtualizedContainerService.HintSize="484,293" sap2010:WorkflowViewState.IdRef="If_802">
+                                                              <If.Then>
+                                                                <Sequence sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_2022">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <ui:Break sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Break_127" />
+                                                                </Sequence>
+                                                              </If.Then>
+                                                            </If>
+                                                          </Sequence>
+                                                        </ui:CommentOut.Body>
+                                                      </ui:CommentOut>
+                                                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'cell  Status Row 0'" sap:VirtualizedContainerService.HintSize="621,106" sap2010:WorkflowViewState.IdRef="Click_3298" KeyModifiers="None" MouseButton="BTN_LEFT">
                                                         <ui:Click.CursorPosition>
                                                           <ui:CursorPosition Position="Center">
                                                             <ui:CursorPosition.OffsetX>
@@ -7419,7 +7452,7 @@
                                                           </ui:CursorPosition>
                                                         </ui:Click.CursorPosition>
                                                         <ui:Click.Target>
-                                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2601d29a-6a67-4095-977b-27acf9037706" InformativeScreenshot="b371e9c31350ed1279091c4758ae09d6" Selector="&lt;wnd aaname='DropDown' app='inspectorgadget.exe' cls='WindowsForms10.Window.*' idx='*' /&gt;&lt;ctrl name='DropDown' role='popup menu' /&gt;&lt;ctrl name='Approve Batch' role='menu item' /&gt;">
+                                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="181ec4db-aae6-49fd-b10e-30e8e0d585c4" InformativeScreenshot="9ff88f8ba4f8325fdfe189099b56ad6a" Selector="&lt;wnd aaname='DropDown' app='inspectorgadget.exe' cls='WindowsForms10.Window.*' /&gt;&lt;ctrl name='DropDown' role='popup menu' /&gt;&lt;ctrl name='Approve Batch' role='menu item' /&gt;">
                                                             <ui:Target.TimeoutMS>
                                                               <InArgument x:TypeArguments="x:Int32" />
                                                             </ui:Target.TimeoutMS>
